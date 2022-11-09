@@ -1,44 +1,92 @@
 [
     {
-       "id":1,
-       "name":"Cat Boarding",
+       "service":"Cat Boarding",
        "price":15,
        "description":"We provide short and long term (per night basis) stay for our furry cat friends here at Paw Care. From just a night to as many nights you need, your cat buddy will be safe & healthy with us.",
-       "image":"https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-13-mini.jpg"
+       "image":"https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-13-mini.jpg",
+       "reviews": [
+         {
+           "review": "My experience with Burns and Harris team lawyers has been outstanding. ",
+           "given_by": "Blaine Gold",
+           "displayName": "",
+           "photoUrl": "",
+           "email": ""
+         }
+       ]
     },
     {
-       "id":2,
-       "name":"Dog Boarding",
+       "service":"Dog Boarding",
        "price":20,
        "description":"Keep your dog at our sky view mini dog apartments. Your dog gets 24/7 monitoring, a buddy to play with & his/her own litter station along with a dedicated play area.",
-       "image":"https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-13-mini.jpg"
+       "image":"https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-13-mini.jpg",
+       "reviews": [
+         {
+           "review": "My experience with Burns and Harris team lawyers has been outstanding. ",
+           "given_by": "Blaine Gold",
+           "displayName": "",
+           "photoUrl": "",
+           "email": ""
+         }
+       ]
     },
     {
-       "id":3,
-       "name":"Day Stay",
+       "service":"Day Stay",
        "price":30,
        "description":"Fancy going out on a quick date or have an urgent thing to take care of and need a place for a few hours for your cat or dog? We got you covered!!",
-       "image":"https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-13-mini.jpg"
+       "image":"https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-13-mini.jpg",
+       "reviews": [
+         {
+           "review": "My experience with Burns and Harris team lawyers has been outstanding. ",
+           "given_by": "Blaine Gold",
+           "displayName": "",
+           "photoUrl": "",
+           "email": ""
+         }
+       ]
     },
     {
-       "id":4,
-       "name":"Pet Grooming",
+       "service":"Pet Grooming",
        "price":50,
        "description":"We provide short and long term (per night basis) stay for our furry cat friends here at Paw Care. From just a night to as many nights you need, your cat buddy will be safe & healthy with us.",
-       "image":"https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-13-mini.jpg"
+       "image":"https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-13-mini.jpg",
+       "reviews": [
+         {
+           "review": "My experience with Burns and Harris team lawyers has been outstanding. ",
+           "given_by": "Blaine Gold",
+           "displayName": "",
+           "photoUrl": "",
+           "email": ""
+         }
+       ]
     },
     {
-       "id":5,
-       "name":"Pet Training",
+       "service":"Pet Training",
        "price":70,
        "description":"We provide short and long term (per night basis) stay for our furry cat friends here at Paw Care. From just a night to as many nights you need, your cat buddy will be safe & healthy with us.",
-       "image":"https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-13-mini.jpg"
+       "image":"https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-13-mini.jpg",
+       "reviews": [
+         {
+           "review": "My experience with Burns and Harris team lawyers has been outstanding. ",
+           "given_by": "Blaine Gold",
+           "displayName": "",
+           "photoUrl": "",
+           "email": ""
+         }
+       ]
     },
     {
-       "id":6,
-       "name":"Pet Hostel",
+       "service":"Pet Hostel",
        "price":80,
        "description":"We provide short and long term (per night basis) stay for our furry cat friends here at Paw Care. From just a night to as many nights you need, your cat buddy will be safe & healthy with us.",
-       "image":"https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-13-mini.jpg"
+       "image":"https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-13-mini.jpg",
+       "reviews": [
+         {
+           "review": "My experience with Burns and Harris team lawyers has been outstanding. ",
+           "given_by": "Blaine Gold",
+           "displayName": "",
+           "photoUrl": "",
+           "email": ""
+         }
+       ]
     }
  ]
