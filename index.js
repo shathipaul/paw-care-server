@@ -18,14 +18,14 @@ const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology:
 async function run() {
     try {
         const serviceCollection = client.db('pawCare').collection('services')
-        
-        app.get('/services', async(req, res) =>{
+
+        app.get('/services', async (req, res) => {
             const query = {}
             const cursor = serviceCollection.find(query);
             const services = await cursor.toArray();
             res.send(services);
         })
-        app.post('/services', async(req, res) =>{
+        app.post('/services', async (req, res) => {
             const result = await serviceCollection.insertOne(req.body);
             res.send(result);
         })
@@ -37,7 +37,7 @@ async function run() {
     try {
         const serviceCollection = client.db('pawCare').collection('services')
 
-        app.get('/serviceslimit', async(req, res) =>{
+        app.get('/serviceslimit', async (req, res) => {
             const query = {}
             const cursor = serviceCollection.find(query);
             const limit = await cursor.limit(3).toArray();
@@ -48,25 +48,48 @@ async function run() {
 
     }
 
-    try{
+    try {
         const serviceCollection = client.db('pawCare').collection('services')
 
-        app.get('/services/:id', async(req, res) =>{
-            const {id} = req.params;
-            const query = {_id: ObjectId(id)}
+        app.get('/services/:id', async (req, res) => {
+            const { id } = req.params;
+            const query = { _id: ObjectId(id) }
             const servicesId = await serviceCollection.findOne(query);
             res.send(servicesId);
         })
     }
-    finally{
-        
+    finally {
+
+    }
+    try {
+        const reviewCollection = client.db('pawCare').collection('review')
+
+        app.post('/review', async (req, res) => {
+            const result = await reviewCollection.insertOne(req.body);
+            res.send(result);
+            console.log(result);
+        })
+    }
+    finally {
+
+    }
+    try {
+        const reviewCollection = client.db('pawCare').collection('review')
+
+        app.get('/review/:id', async (req, res) => {
+            const id = req.params.id;
+            const query = {service_id: id}
+            const cursor = reviewCollection.find(query);
+            const review = await cursor.toArray();
+            res.send(review);
+            console.log(id);
+        })
+    }
+    finally {
+
     }
 }
-run().catch(error =>console.log(error));
-
-  
-
-
+run().catch(error => console.log(error));
 
 
 app.listen(port, () => {
